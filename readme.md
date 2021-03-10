@@ -1,4 +1,3 @@
-Business App Initial Content
+POC for Process Instance Migration
 =============================
 
-Your project description here.
