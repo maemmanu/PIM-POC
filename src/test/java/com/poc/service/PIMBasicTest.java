@@ -95,7 +95,7 @@ public class PIMBasicTest {
             assertNotNull(piLog);
             assertEquals(unit.getIdentifier(), piLog.getDeploymentId());
             
-            MigrationReport report = processInstanceMigrationService.migrate(unit.getIdentifier(), processInstanceId, unitV2.getIdentifier(), "workflowPurgeAPI-kjar.evaluation");
+            MigrationReport report = processInstanceMigrationService.migrate(unit.getIdentifier(), processInstanceId, unitV2.getIdentifier(), "PIMTest.process");
             assertTrue(report.isSuccessful());
             
             piLog = runtimeDataService.getProcessInstanceById(processInstanceId);
