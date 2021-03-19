@@ -53,7 +53,7 @@ public class Migrate {
         parameters.put("param4", "example");
 
         long processInstanceId = processService.startProcess(unit.getIdentifier(), "PIMTest.process", params);
-        MigrationReport report = processInstanceMigrationService.migrate(unit.getIdentifier(), processInstanceId, unitV2.getIdentifier(), "workflowPurgeAPI-kjar.evaluation");
+        MigrationReport report = processInstanceMigrationService.migrate(unit.getIdentifier(), processInstanceId, unitV2.getIdentifier(), "PIMTest.process");
 
         return report;
     	
